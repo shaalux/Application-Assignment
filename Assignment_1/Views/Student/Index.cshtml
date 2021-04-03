@@ -1,0 +1,15 @@
+﻿@model  IEnumerable<Assignment_1.Models.Student>   
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Names</h2>
+
+<p>
+    @foreach (var item in Model)
+    {
+      @Html.DisplayFor(modelItem => item.StudentName)
+    }
+</p>
